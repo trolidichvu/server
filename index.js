@@ -27,6 +27,9 @@ function executeCommand(command, callback) {
     callback(output);
   });
 }
+app.get('/', (req, res) => {
+  res.send('homepage');
+});
 
 app.listen(3000, () => {
   console.log('Server listening on port 3000');
